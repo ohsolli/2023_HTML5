@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML5 멀티미디어</h1>
+    <h2>video</h2>
+    <video src="./video/오레오X블랙핑크.mp4" 
+    style="width: 576px; height: 360px;"
+    controls autoplay muted, loop>
+    <!--순서대로 controls창, 자동재생, 무음처리, 반복재생-->
+    <p>
+        controls: 플레이버튼과 남은 시간, 소리 표시 <br>
+        autoplay: 자동 실행 (단, muted 상태일 때) <br>
+        muted: 무음 <br>
+        loop: 계속 반복 <br>
+    </p>
+    </video>
+    <h2>플러그인</h2>
+    <h3>object</h3>
+    <object data="./data/3일차 HTML5.pdf" type=""></object>
+    <p>object 태그는 다양한 파일들을 화면에 출력하는 태그</p>
+    <h1>embed</h1>
+    <embed src="./data/3일차 HTML5.pdf" type="">
+        <p>embed object와 동일하게 사용할 수 있다.</p>
+    <h3>유튜브 영상 들고오기</h3>
+    <iframe 
+    widtg=""
+    heigth=""
+    src="https://youtu.be/Uh08Rp4Xhm4?mute=1&autoplay=1&controls=0"
+    title="오레오 어저구"
+    frameborder="0"
+    allow="accelerpmeter; autoplay; clipboard-write;"
+    allowfullscreen></iframe>
+    <p>
+        소스코드로 복사해오면 iframe안에 설정이 되어서 들고 올 수 있다.
+        비디오의 설정을 유튜브에서도 적용할 수 있다. (url을 통해)
+        url 뒤에 ?를 이용한 쿼리문으로 작성할 수 있다. 
+        ?mute=1&autoplay=1 같은 값으로 들어간다.
+        1은 true 참이라는 값으로 사용,
+        0은 false 거짓이라는 값으로 사용
+    </p>
+    <br><hr><br>
+    <h1>현재 인기있는 영상</h1>
+    <table>
+        <tr>
+            <td><video src="./video/오레오X블랙핑크.mp4" style="width: 200px; height: 300px;" controls autoplay>1등</video></td>
+            <td><video src="./video/오레오X블랙핑크.mp4" style="width: 200px; height: 300px;" controls autoplay>2등</video></td>
+            <td><video src="./video/오레오X블랙핑크.mp4" style="width: 200px; height: 300px;" controls autoplay>3등</video></td>
+            <td><video src="./video/오레오X블랙핑크.mp4" style="width: 200px; height: 300px;" controls autoplay>4등</video></td>
+        </tr>
+        <tr>
+            <td>1위</td>
+            <td>2위</td>
+            <td>3위</td>
+            <td>4위</td>
+        </tr>
+    </table>
+</body>
+</html>
